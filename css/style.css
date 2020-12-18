@@ -3,22 +3,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 1, ../../../../My projects/Uber/sass/_general.sass */
+/* line 2, ../../../../My projects/Uber/sass/_general.sass */
 header {
   position: relative;
   height: 50px;
 }
 
-/* line 5, ../../../../My projects/Uber/sass/_general.sass */
+/* line 6, ../../../../My projects/Uber/sass/_general.sass */
 nav {
   position: fixed;
   width: 100%;
   height: 50px;
   background-color: #212121;
-  z-index: 2;
+  z-index: 5;
 }
 
-/* line 12, ../../../../My projects/Uber/sass/_general.sass */
+/* line 13, ../../../../My projects/Uber/sass/_general.sass */
 .hamburger {
   display: none;
 }
@@ -32,25 +32,31 @@ nav {
   list-style-type: none;
 }
 
-/* line 23, ../../../../My projects/Uber/sass/_general.sass */
+/* line 22, ../../../../My projects/Uber/sass/_general.sass */
 .menu_link {
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
 }
 
-/* line 28, ../../../../My projects/Uber/sass/_general.sass */
+/* line 26, ../../../../My projects/Uber/sass/_general.sass */
+.menu_link:hover {
+  text-decoration: none;
+  color: #1aecc7;
+}
+
+/* line 29, ../../../../My projects/Uber/sass/_general.sass */
 .menu_item {
   border-right: 2px dotted black;
   padding-right: 28px;
 }
 
-/* line 31, ../../../../My projects/Uber/sass/_general.sass */
+/* line 32, ../../../../My projects/Uber/sass/_general.sass */
 .menu_item:last-child {
   border-right: none;
 }
 
-/* line 34, ../../../../My projects/Uber/sass/_general.sass */
+/* line 35, ../../../../My projects/Uber/sass/_general.sass */
 .subheader {
   position: absolute;
   top: 50px;
@@ -66,7 +72,7 @@ nav {
   margin-top: 16px;
 }
 
-/* line 46, ../../../../My projects/Uber/sass/_general.sass */
+/* line 45, ../../../../My projects/Uber/sass/_general.sass */
 .subheader_official {
   margin-top: 6px;
   opacity: 0.5;
@@ -75,7 +81,7 @@ nav {
   font-weight: 400;
 }
 
-/* line 53, ../../../../My projects/Uber/sass/_general.sass */
+/* line 51, ../../../../My projects/Uber/sass/_general.sass */
 .subheader_call {
   color: #ffffff;
   font-size: 12px;
@@ -84,7 +90,7 @@ nav {
   text-align: right;
 }
 
-/* line 60, ../../../../My projects/Uber/sass/_general.sass */
+/* line 57, ../../../../My projects/Uber/sass/_general.sass */
 .subheader_phone {
   display: block;
   margin-top: 8px;
@@ -96,7 +102,13 @@ nav {
   line-height: 12px;
 }
 
-/* line 70, ../../../../My projects/Uber/sass/_general.sass */
+/* line 66, ../../../../My projects/Uber/sass/_general.sass */
+.subheader_phone:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 69, ../../../../My projects/Uber/sass/_general.sass */
 .subheader_btn {
   margin-top: 19px;
   width: 172px;
@@ -104,7 +116,7 @@ nav {
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
-  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  background-image: linear-gradient(to top, #1aecc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #ffffff;
   font-size: 14px;
@@ -125,7 +137,7 @@ nav {
   padding: 150px 0 135px 0;
 }
 
-/* line 90, ../../../../My projects/Uber/sass/_general.sass */
+/* line 89, ../../../../My projects/Uber/sass/_general.sass */
 .promo_header {
   color: #ffffff;
   font-weight: 700;
@@ -136,7 +148,7 @@ nav {
   text-align: center;
 }
 
-/* line 99, ../../../../My projects/Uber/sass/_general.sass */
+/* line 97, ../../../../My projects/Uber/sass/_general.sass */
 .promo_subheader {
   color: #ffffff;
   font-weight: 700;
@@ -148,7 +160,7 @@ nav {
   text-align: center;
 }
 
-/* line 109, ../../../../My projects/Uber/sass/_general.sass */
+/* line 106, ../../../../My projects/Uber/sass/_general.sass */
 .promo_descr {
   color: #ffffff;
   font-size: 18px;
@@ -158,7 +170,7 @@ nav {
   margin-top: 23px;
 }
 
-/* line 117, ../../../../My projects/Uber/sass/_general.sass */
+/* line 113, ../../../../My projects/Uber/sass/_general.sass */
 .promo_btn {
   display: block;
   margin: 118px auto 0 auto;
@@ -167,7 +179,7 @@ nav {
   box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
-  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  background-image: linear-gradient(to top, #1aecc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #ffffff;
   font-size: 18px;
@@ -175,8 +187,61 @@ nav {
   text-transform: uppercase;
 }
 
-/* line 133, ../../../../My projects/Uber/sass/_general.sass */
+/* line 2, ../../../../My projects/Uber/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1aecc7;
+}
+
+/* line 129, ../../../../My projects/Uber/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 131, ../../../../My projects/Uber/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 136, ../../../../My projects/Uber/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1aecc7;
+  border-radius: 100%;
+}
+
+/* line 145, ../../../../My projects/Uber/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 147, ../../../../My projects/Uber/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1aecc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 152, ../../../../My projects/Uber/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 158, ../../../../My projects/Uber/sass/_general.sass */
 .label {
+  position: relative;
   margin: 0 auto;
   height: 24px;
   width: 112px;
@@ -187,136 +252,118 @@ nav {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 145, ../../../../My projects/Uber/sass/_general.sass */
+/* line 171, ../../../../My projects/Uber/sass/_general.sass */
+.label_white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 174, ../../../../My projects/Uber/sass/_general.sass */
+.label_min {
+  width: 76px;
+}
+
+/* line 177, ../../../../My projects/Uber/sass/_general.sass */
 .title {
+  position: relative;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
   font-size: 38px;
+  line-height: 38px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 154, ../../../../My projects/Uber/sass/_general.sass */
+/* line 188, ../../../../My projects/Uber/sass/_general.sass */
+.title_white {
+  color: #fff;
+}
+
+/* line 191, ../../../../My projects/Uber/sass/_general.sass */
 .subtitle {
+  position: relative;
   margin-top: 19px;
   color: #222222;
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  z-index: 2;
 }
 
-/* line 161, ../../../../My projects/Uber/sass/_general.sass */
-.reasons {
-  padding: 71px 0 65px 0;
+/* line 199, ../../../../My projects/Uber/sass/_general.sass */
+.subtitle_white {
+  color: #fff;
 }
 
-/* line 164, ../../../../My projects/Uber/sass/_general.sass */
-.reasons_block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
-}
-
-/* line 170, ../../../../My projects/Uber/sass/_general.sass */
-.reasons_round {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 26px;
-  width: 113px;
-  height: 113px;
-  background-color: #1eacc7;
-  border-radius: 100%;
-}
-
-/* line 180, ../../../../My projects/Uber/sass/_general.sass */
-.reasons_descr {
-  width: 343px;
-}
-
-/* line 183, ../../../../My projects/Uber/sass/_general.sass */
-.reasons_subtitle {
-  line-height: 21px;
-  color: #1eacc7;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-/* line 189, ../../../../My projects/Uber/sass/_general.sass */
-.reasons_text {
-  color: #202020;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 21px;
-}
-
-/* line 195, ../../../../My projects/Uber/sass/_general.sass */
+/* line 203, ../../../../My projects/Uber/sass/_general.sass */
 .mobile {
-  min-height: 863px;
+  min-height: 864px;
   padding: 48px 0 79px 0;
   background: url("../img/bg_cubes.png") center center/cover no-repeat;
 }
 
-/* line 199, ../../../../My projects/Uber/sass/_general.sass */
+/* line 207, ../../../../My projects/Uber/sass/_general.sass */
 .mobile .row {
   margin-top: 32px;
 }
 
-/* line 201, ../../../../My projects/Uber/sass/_general.sass */
+/* line 209, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item {
   position: relative;
   width: 320px;
   height: 280px;
   margin: 0 auto;
   margin-bottom: 19px;
-  padding-top: 91px;
+  padding-top: 92px;
 }
 
-/* line 208, ../../../../My projects/Uber/sass/_general.sass */
+/* line 216, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_1 {
   background: url("../img/mobile/mobile_1.jpg") center center/cover no-repeat;
 }
 
-/* line 210, ../../../../My projects/Uber/sass/_general.sass */
+/* line 218, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_2 {
   background: url("../img/mobile/mobile_2.jpg") center center/cover no-repeat;
 }
 
-/* line 212, ../../../../My projects/Uber/sass/_general.sass */
+/* line 220, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_3 {
   background: url("../img/mobile/mobile_3.jpg") center center/cover no-repeat;
 }
 
-/* line 214, ../../../../My projects/Uber/sass/_general.sass */
+/* line 222, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_4 {
   background: url("../img/mobile/mobile_4.jpg") center center/cover no-repeat;
 }
 
-/* line 216, ../../../../My projects/Uber/sass/_general.sass */
+/* line 224, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_5 {
   background: url("../img/mobile/mobile_5.jpg") center center/cover no-repeat;
 }
 
-/* line 218, ../../../../My projects/Uber/sass/_general.sass */
+/* line 226, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_6 {
   background: url("../img/mobile/mobile_6.jpg") center center/cover no-repeat;
 }
 
-/* line 220, ../../../../My projects/Uber/sass/_general.sass */
+/* line 228, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_subtitle {
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
-  text-align: center;
+  line-height: 31px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-/* line 226, ../../../../My projects/Uber/sass/_general.sass */
+/* line 235, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_plus {
   display: flex;
   justify-content: center;
@@ -333,18 +380,18 @@ nav {
   cursor: pointer;
 }
 
-/* line 240, ../../../../My projects/Uber/sass/_general.sass */
+/* line 249, ../../../../My projects/Uber/sass/_general.sass */
 .mobile_item_plus:before {
   content: '';
   display: block;
   width: 14px;
-  height: 1px;
+  height: 2px;
   background-color: #1aecc7;
   transition: 0.3s all;
 }
 
-/* line 248, ../../../../My projects/Uber/sass/_general.sass */
-.mobile_item_plus::after {
+/* line 256, ../../../../My projects/Uber/sass/_general.sass */
+.mobile_item_plus:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -356,12 +403,12 @@ nav {
   transition: 0.3s all;
 }
 
-/* line 261, ../../../../My projects/Uber/sass/_general.sass */
-.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+/* line 267, ../../../../My projects/Uber/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
   background-color: #ff5656;
 }
 
-/* line 266, ../../../../My projects/Uber/sass/_general.sass */
+/* line 271, ../../../../My projects/Uber/sass/_general.sass */
 .choice {
   position: relative;
   min-height: 895px;
@@ -369,7 +416,7 @@ nav {
   background: url("/img/bg_cubes.png") center center/cover no-repeat;
 }
 
-/* line 271, ../../../../My projects/Uber/sass/_general.sass */
+/* line 276, ../../../../My projects/Uber/sass/_general.sass */
 .choice_img {
   position: relative;
   display: block;
@@ -377,7 +424,7 @@ nav {
   z-index: 2;
 }
 
-/* line 276, ../../../../My projects/Uber/sass/_general.sass */
+/* line 281, ../../../../My projects/Uber/sass/_general.sass */
 .choice_descr {
   text-align: center;
   color: #222222;
@@ -386,7 +433,7 @@ nav {
   line-height: 24px;
 }
 
-/* line 282, ../../../../My projects/Uber/sass/_general.sass */
+/* line 287, ../../../../My projects/Uber/sass/_general.sass */
 .choice .black {
   position: absolute;
   top: 0;
@@ -397,46 +444,46 @@ nav {
   z-index: 1;
 }
 
-/* line 291, ../../../../My projects/Uber/sass/_general.sass */
+/* line 296, ../../../../My projects/Uber/sass/_general.sass */
 .require {
   padding: 68px 0 84px 0;
 }
 
-/* line 293, ../../../../My projects/Uber/sass/_general.sass */
+/* line 298, ../../../../My projects/Uber/sass/_general.sass */
 .require_block {
   margin: 33px 0;
 }
 
-/* line 295, ../../../../My projects/Uber/sass/_general.sass */
-.require_block_nbm {
+/* line 300, ../../../../My projects/Uber/sass/_general.sass */
+.require_block_nmb {
   margin-bottom: 0px;
 }
 
-/* line 297, ../../../../My projects/Uber/sass/_general.sass */
+/* line 302, ../../../../My projects/Uber/sass/_general.sass */
 .require_title {
   color: #1ca8c3;
   font-size: 22px;
   font-weight: 400;
 }
 
-/* line 301, ../../../../My projects/Uber/sass/_general.sass */
+/* line 306, ../../../../My projects/Uber/sass/_general.sass */
 .require_list {
   list-style-type: none;
   padding-left: 50px;
   margin-top: 22px;
 }
 
-/* line 305, ../../../../My projects/Uber/sass/_general.sass */
+/* line 310, ../../../../My projects/Uber/sass/_general.sass */
 .require_list li {
   position: relative;
-  font-weight: 300;
   font-size: 17px;
+  font-weight: 300;
   line-height: 24px;
   margin-bottom: 10px;
 }
 
-/* line 311, ../../../../My projects/Uber/sass/_general.sass */
-.require_list li::before {
+/* line 316, ../../../../My projects/Uber/sass/_general.sass */
+.require_list li:before {
   content: '';
   display: block;
   position: absolute;
@@ -447,7 +494,7 @@ nav {
   background: url("/img/blue_galka.png") center center/cover no-repeat;
 }
 
-/* line 320, ../../../../My projects/Uber/sass/_general.sass */
+/* line 325, ../../../../My projects/Uber/sass/_general.sass */
 .require_descr {
   margin-top: 25px;
   font-size: 17px;
@@ -456,17 +503,17 @@ nav {
   color: #1ca8c3;
 }
 
-/* line 327, ../../../../My projects/Uber/sass/_general.sass */
+/* line 332, ../../../../My projects/Uber/sass/_general.sass */
 .require .warning .require_title {
   color: #ff5656;
 }
 
-/* line 331, ../../../../My projects/Uber/sass/_general.sass */
+/* line 336, ../../../../My projects/Uber/sass/_general.sass */
 .require .warning .require_list li:before {
   background: url("/img/red_galka.png") center center/cover no-repeat;
 }
 
-/* line 334, ../../../../My projects/Uber/sass/_general.sass */
+/* line 338, ../../../../My projects/Uber/sass/_general.sass */
 .world {
   position: relative;
   min-height: 717px;
@@ -474,23 +521,7 @@ nav {
   background: url("/img/map.jpg") center center/cover no-repeat;
 }
 
-/* line 339, ../../../../My projects/Uber/sass/_general.sass */
-.world .label {
-  background-color: #ffffff;
-  color: #070716;
-}
-
-/* line 342, ../../../../My projects/Uber/sass/_general.sass */
-.world .title {
-  color: #ffffff;
-}
-
-/* line 344, ../../../../My projects/Uber/sass/_general.sass */
-.world .subtitle {
-  color: #ffffff;
-}
-
-/* line 347, ../../../../My projects/Uber/sass/_general.sass */
+/* line 343, ../../../../My projects/Uber/sass/_general.sass */
 .world_link {
   position: absolute;
   left: 50%;
@@ -504,23 +535,23 @@ nav {
   color: #1fbad6;
 }
 
-/* line 358, ../../../../My projects/Uber/sass/_general.sass */
-.world:hover {
+/* line 354, ../../../../My projects/Uber/sass/_general.sass */
+.world_link:hover {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 361, ../../../../My projects/Uber/sass/_general.sass */
+/* line 357, ../../../../My projects/Uber/sass/_general.sass */
 footer {
   padding: 14px 23px 39px 23px;
 }
 
-/* line 364, ../../../../My projects/Uber/sass/_general.sass */
+/* line 360, ../../../../My projects/Uber/sass/_general.sass */
 footer a:hover {
   text-decoration: none;
 }
 
-/* line 367, ../../../../My projects/Uber/sass/_general.sass */
+/* line 363, ../../../../My projects/Uber/sass/_general.sass */
 .footer_divider {
   width: 299px;
   height: 4px;
@@ -528,7 +559,7 @@ footer a:hover {
   margin: 0 auto;
 }
 
-/* line 372, ../../../../My projects/Uber/sass/_general.sass */
+/* line 368, ../../../../My projects/Uber/sass/_general.sass */
 .footer_wrapper {
   display: flex;
   justify-content: space-between;
@@ -536,25 +567,25 @@ footer a:hover {
   padding-top: 32px;
 }
 
-/* line 377, ../../../../My projects/Uber/sass/_general.sass */
+/* line 373, ../../../../My projects/Uber/sass/_general.sass */
 .footer_wrapper > div {
   width: 33%;
 }
 
-/* line 379, ../../../../My projects/Uber/sass/_general.sass */
+/* line 375, ../../../../My projects/Uber/sass/_general.sass */
 .footer_wrapper > div:nth-child(3) {
   display: flex;
   justify-content: flex-end;
 }
 
-/* line 382, ../../../../My projects/Uber/sass/_general.sass */
+/* line 378, ../../../../My projects/Uber/sass/_general.sass */
 .footer_social {
   width: 160px;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 386, ../../../../My projects/Uber/sass/_general.sass */
+/* line 382, ../../../../My projects/Uber/sass/_general.sass */
 .footer_social_item {
   display: flex;
   justify-content: center;
@@ -566,25 +597,25 @@ footer a:hover {
   border-radius: 100%;
 }
 
-/* line 395, ../../../../My projects/Uber/sass/_general.sass */
+/* line 391, ../../../../My projects/Uber/sass/_general.sass */
 .footer_social_item i {
   color: #fff;
 }
 
-/* line 397, ../../../../My projects/Uber/sass/_general.sass */
+/* line 393, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links {
   width: 390px;
   margin: 0 auto;
 }
 
-/* line 400, ../../../../My projects/Uber/sass/_general.sass */
+/* line 396, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links_main {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
 }
 
-/* line 404, ../../../../My projects/Uber/sass/_general.sass */
+/* line 400, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links_main a {
   color: #070716;
   font-size: 15px;
@@ -592,14 +623,14 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-/* line 409, ../../../../My projects/Uber/sass/_general.sass */
+/* line 405, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links_sub {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-/* line 413, ../../../../My projects/Uber/sass/_general.sass */
+/* line 409, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links_sub a {
   color: #999999;
   font-size: 11px;
@@ -607,7 +638,7 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-/* line 418, ../../../../My projects/Uber/sass/_general.sass */
+/* line 414, ../../../../My projects/Uber/sass/_general.sass */
 .footer_links_lang {
   display: block;
   margin: 0 auto;
@@ -619,7 +650,7 @@ footer a:hover {
   text-align: center;
 }
 
-/* line 427, ../../../../My projects/Uber/sass/_general.sass */
+/* line 423, ../../../../My projects/Uber/sass/_general.sass */
 .xs-visible {
   display: none;
 }
