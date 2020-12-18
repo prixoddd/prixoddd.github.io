@@ -491,7 +491,7 @@ nav {
   top: 3px;
   width: 21px;
   height: 20px;
-  background: url("/img/blue_galka.png") center center/cover no-repeat;
+  background: url("/img/round/check_blue.svg") center center/cover no-repeat;
 }
 
 /* line 325, ../../../../My projects/Uber/sass/_general.sass */
@@ -510,7 +510,7 @@ nav {
 
 /* line 336, ../../../../My projects/Uber/sass/_general.sass */
 .require .warning .require_list li:before {
-  background: url("/img/red_galka.png") center center/cover no-repeat;
+  background: url("/img/round/check_red.svg") center center/cover no-repeat;
 }
 
 /* line 338, ../../../../My projects/Uber/sass/_general.sass */
